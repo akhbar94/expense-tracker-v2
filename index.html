@@ -8,7 +8,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Expense Tracker">
   <link rel="manifest" href="./manifest.json">
-  <title>â˜• Expense Tracker</title>
+  <title>☕ Expense Tracker</title>
+
   <style>
     html, body {
       margin: 0;
@@ -17,10 +18,12 @@
       background: #111322;
       overflow: hidden;
     }
+
     body {
       padding: 0;
       font-family: Arial, sans-serif;
     }
+
     #appFrame {
       display: block;
       width: 100%;
@@ -29,6 +32,7 @@
       border: 0;
       background: #111322;
     }
+
     #loading {
       position: fixed;
       inset: 0;
@@ -42,23 +46,21 @@
       font-weight: 700;
       transition: opacity .25s ease;
     }
+
     #loading.hide {
       opacity: 0;
       pointer-events: none;
     }
   </style>
 </head>
-<body>
-  <div id="loading">â˜• Loading Expense Tracker...</div>
 
-  <!--
-    IMPORTANT:
-    Replace the URL below with the CURRENT Apps Script /exec URL
-    for your TRACK Expense Web App v2.
-  -->
+<body>
+
+  <div id="loading">☕ Loading Expense Tracker...</div>
+
   <iframe
     id="appFrame"
-    title="â˜• Expense Tracker"
+    title="☕ Expense Tracker"
     src="https://script.google.com/macros/s/AKfycbzIFGn8GQA1bi9w-WMpIX37w8xS3ScdLwRRHMiOHbX_3M4N668kBoTQPSEiwZDRxj9Q/exec?v=20261006"
     allow="clipboard-read; clipboard-write"
     referrerpolicy="no-referrer-when-downgrade">
@@ -78,5 +80,6 @@
       });
     }
   </script>
+
 </body>
 </html>
